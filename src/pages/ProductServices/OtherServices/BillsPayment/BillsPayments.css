@@ -1,0 +1,335 @@
+.Bills-Payment {
+
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+
+.BP-container {
+    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.BP-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="%23FFFFFF10" d="M45,-78.1C58.3,-71.3,68.6,-58.4,75.7,-43.9C82.8,-29.4,86.6,-13.2,85.8,2.8C85,18.8,79.6,34.6,70.5,47.8C61.4,61,48.6,71.5,34.1,76.7C19.6,81.9,3.5,81.8,-12.4,78.9C-28.3,76,-44,70.3,-56.8,60.1C-69.6,49.9,-79.5,35.2,-84.3,18.5C-89.1,1.8,-88.8,-16.8,-82.2,-32.2C-75.6,-47.6,-62.7,-59.8,-47.8,-65.9C-32.9,-72,-16.4,-72,0.3,-72.5C17,-73,34,-84.9,45,-78.1Z" transform="translate(100 100)"/></svg>') center/cover;
+    opacity: 0.1;
+    animation: pulse 15s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.BP-header {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    animation: fadein 0.8s ease-out;
+    z-index: 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.BP-title {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.BP-subtitle {
+    color: #ffffff;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+.BP-header-button {
+    background-color: #0093e9;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.BP-header-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: #0093e9;
+}
+
+.BP-type-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: -40px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.BP-offer-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.BP-card-accent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #005fb8, #0093e9);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.BP-offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.BP-offer-card:hover .BP-card-accent {
+    transform: scaleX(1);
+}
+
+.BP-offer-icon {
+    font-size: 2.5rem;
+    color: #005fb8;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.BP-offer-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.BP-description {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.BP-description h2 {
+    text-align: center;
+    color: #005fb8;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.BP-description-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.BP-description-content {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.BP-description-content h4 {
+    text-align: center;
+    color: #005fb8;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.BP-description-content p {
+    color: #005fb8;
+    font-weight: 400;
+}
+
+
+.BP-apply-container {
+    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+    padding: 70px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.BP-apply-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.BP-apply-section p {
+    margin-bottom: 30px;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.BP-apply-button {
+    background-color: #0093e9;
+    color: white;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.BP-apply-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.BP-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.BP-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .BP-container {
+        padding: 60px 15px;
+    }
+
+    .BP-title {
+        font-size: 2.2rem;
+    }
+
+    .BP-subtitle {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .BP-type-card {
+        padding: 30px 15px;
+        margin-top: -30px;
+    }
+
+    .BP-offer-card {
+        padding: 25px;
+    }
+
+    .BP-description {
+        padding: 40px 15px;
+    }
+
+    .BP-description-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .BP-requirements-container {
+        padding: 40px 15px;
+    }
+
+    .BP-requirements-list {
+        padding: 25px;
+    }
+
+    .BP-apply-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .BP-header-button,
+    .BP-apply-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .BP-scroll-top {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .BP-title {
+        font-size: 2rem;
+    }
+
+    .BP-subtitle {
+        font-size: 1rem;
+    }
+
+    .BP-offer-card {
+        margin: 0 10px;
+    }
+
+    .BP-requirements-list h4 {
+        font-size: 1.3rem;
+    }
+
+    .BP-requirements-list li {
+        font-size: 0.95rem;
+    }
+
+    .BP-scroll-top {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.7rem;
+    }
+}

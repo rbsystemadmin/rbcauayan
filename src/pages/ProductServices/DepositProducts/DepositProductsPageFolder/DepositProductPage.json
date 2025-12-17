@@ -1,0 +1,84 @@
+{
+    "depositProducts": [
+        {
+            "id": 1,
+            "title": "Regular Savings Deposit",
+            "description": "",
+            "category": "Deposit",
+            "features": [
+                ".25% Annual Interst Rate",
+                "Opening Account at ₱1,000 pesos",
+                "Maintaining Balance at ₱1,000 pesos to earn interest"
+            ],
+            "icon": "🏦",
+            "route": "/deposit/RegularSavings"
+        },
+        {
+            "id": 2,
+            "title": "Students Saving Deposit",
+            "description": "",
+            "category": "Deposit",
+            "features": [
+                ".25% Annual Interst Rate",
+                "Opening Account at ₱100 pesos",
+                "Maintaining Balance at ₱1000 pesos to earn interest"
+            ],
+            "icon": "🎓",
+            "route": "/deposit/StudentSavings"
+        },
+        {
+            "id": 3,
+            "title": "Basic Deposit Account",
+            "description": "",
+            "category": "Deposit",
+            "icon": "💰",
+            "features": [
+                ".25% Annual Interst Rate",
+                "Opening Account less than ₱100 pesos",
+                "No maintaining balance"
+            ],
+            "route": "/deposit/BasicSavings"
+        },
+        {
+            "id": 4,
+            "title": "Regular Checking Account",
+            "description": "",
+            "category": "Deposit",
+            "features": [
+                "with Passbook",
+                "Opening Account at ₱5,000 Php",
+                "Maintaining Balance at ₱5,000 Php"
+            ],
+            "icon": "📝",
+            "route": "/deposit/CheckingAccount"
+        },
+        {
+            "id": 5,
+            "title": "Interest Bearing Checking Account",
+            "description": "",
+            "category": "Deposit",
+            "features": [
+                "with Passbook",
+                ".25% Annual Interst Rate",
+                "Opening Account at ₱10,000 Php",
+                "Maintaining Balance at ₱10,000 pesos to earn interest"
+            ],
+            "icon": "📝",
+            "route": "/deposit/InterestBearingCheckingAccount"
+        },
+        {
+            "id": 6,
+            "title": "Time Certificate of Deposit",
+            "description": "",
+            "category": "Deposit",
+            "features": [
+                "Competitive interest rates",
+                "Flexible terms",
+                "Guaranteed returns",
+                "Auto-renewal option"
+            ],
+            "icon": "⏰",
+            "route": "/deposit/TimeCertofDeposit"
+        }
+    ]
+}

@@ -1,0 +1,412 @@
+.TCD-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.TCD-hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    height: 180px;
+    box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.TCD-hero-content {
+    position: relative;
+    margin-top: 20px;
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.TCD-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.TCD-hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.TCD-header-button {
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #2a5298;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.TCD-header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.TCD-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+/* Benefits Section */
+.TCD-benefits {
+    margin-bottom: 4rem;
+}
+
+.TCD-benefits h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2a4365;
+}
+
+.TCD-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.TCD-benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.TCD-benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: #2a4365;
+    background-color: #f8fafc;
+}
+
+.TCD-benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Description Section */
+.TCD-description-section {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.TCD-description-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.TCD-description-container h2 {
+    color: #003366;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.TCD-description-container p {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+
+}
+
+/* Features Section */
+.TCD-features {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.TCD-features:hover {
+    border-color: #2a4365;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.TCD-features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.TCD-features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.TCD-features-list li {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.TCD-features-list li:hover {
+    background-color: #f8fafc;
+    padding-left: 2rem;
+}
+
+.TCD-features-list li:before {
+    content: "✓";
+    color: #2a4365;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.TCD-features-list li:hover:before {
+    color: #1a365d;
+    transform: scale(1.2);
+}
+
+/* Visit Info Section */
+.TCD-visit-info {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #2a4365;
+    transition: all 0.3s ease;
+}
+
+.TCD-visit-info:hover {
+    border-left-width: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.TCD-visit-info h3 {
+    color: #2a4365;
+    margin-bottom: 1rem;
+}
+
+.TCD-hours {
+    margin: 1.5rem 0;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.TCD-hours-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.TCD-hours-item:hover {
+    background-color: #f8fafc;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.TCD-hours-item:last-child {
+    border-bottom: none;
+}
+
+.TCD-visit-note {
+    color: #4a5568;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Requirements Section */
+.TCD-requirements {
+    margin-bottom: 4rem;
+}
+
+.TCD-requirements h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2a4365;
+}
+
+.TCD-requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.TCD-requirement-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.TCD-requirement-item:hover {
+    border-color: #2a4365;
+    background-color: #f8fafc;
+    transform: translateY(-3px);
+}
+
+.TCD-requirement-item h3 {
+    color: #2a4365;
+    margin-bottom: 1rem;
+}
+
+.TCD-requirement-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.TCD-requirement-item li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.TCD-requirement-item li:hover {
+    background-color: #f8fafc;
+    padding-left: 2rem;
+}
+
+.TCD-requirement-item li:before {
+    content: "•";
+    color: #2a4365;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.TCD-requirement-item li:hover:before {
+    color: #1a365d;
+    transform: scale(1.2);
+}
+
+/* CTA Section */
+.TCD-cta {
+    background: linear-gradient(135deg, #2a4365 0%, #1a365d 100%);
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.TCD-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.TCD-button-primary {
+    background: white;
+    color: #2a4365;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.TCD-button-primary:hover {
+    transform: translateY(-2px);
+    background-color: #2a4365;
+    color: white;
+    box-shadow: 0 4px 12px rgba(42, 67, 101, 0.15);
+}
+
+.TCD-button-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.TCD-button-secondary:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*Scroll Top button*/
+.TCD-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.TCD-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .TCD-hero {
+        padding: 3rem 1rem;
+    }
+
+    .TCD-features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .TCD-cta-buttons {
+        flex-direction: column;
+    }
+
+    .TCD-button-primary,
+    .TCD-button-secondary {
+        width: 100%;
+    }
+
+    .TCD-visit-info {
+        margin-top: 2rem;
+    }
+}

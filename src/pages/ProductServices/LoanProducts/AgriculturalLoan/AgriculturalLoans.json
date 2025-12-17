@@ -1,0 +1,70 @@
+{
+    "categories": [
+        {
+            "id": "Agricultural",
+            "label": "Agricultural Loans"
+        },
+        {
+            "id": "Commercial",
+            "label": "Commercial Loans"
+        },
+        {
+            "id": "Personal",
+            "label": "Personal Loans"
+        }
+    ],
+    "loanProducts": [
+        {
+            "id": "agri-masikap-loan",
+            "icon": "🌾",
+            "title": "Agri-Masikap Loans",
+            "description": "",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "agri-sagana-loan",
+            "icon": "🌾",
+            "title": "Agri-Sagana Loans",
+            "description": "",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "crop-loan",
+            "icon": "🌾",
+            "title": "Crop Loans",
+            "description": "",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "ACPC",
+            "icon": "🌾",
+            "title": "ACPC",
+            "description": "",
+            "category": "Agricultural",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/ApplyLoan"
+        }
+    ]
+}

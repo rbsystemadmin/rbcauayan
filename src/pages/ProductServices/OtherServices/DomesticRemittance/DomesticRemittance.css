@@ -1,0 +1,325 @@
+.Inter-Branch-Deposit {
+
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.DR-container {
+    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.DR-header {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    animation: fadein 0.8s ease-out;
+    z-index: 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.DR-title {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.DR-subtitle {
+    color: #ffffff;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+.DR-header-button {
+    background-color: #0093e9;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.DR-header-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: #0093e9;
+}
+
+.DR-type-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: -40px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.DR-offer-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.DR-card-accent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #005fb8, #0093e9);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.DR-offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.DR-offer-card:hover .DR-card-accent {
+    transform: scaleX(1);
+}
+
+.DR-offer-icon {
+    font-size: 2.5rem;
+    color: #005fb8;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.DR-offer-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.DR-description {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.DR-description h2 {
+    text-align: center;
+    color: #005fb8;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.DR-description-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+
+}
+
+.DR-description-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.DR-description-content h4 {
+    color: #005fb8;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.DR-description-content p {
+    color: #005fb8;
+    font-weight: 500;
+}
+
+
+.DR-apply-container {
+    background: linear-gradient(135deg, #005fb8 0%, #0093e9 100%);
+    padding: 70px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.DR-apply-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.DR-apply-section p {
+    margin-bottom: 30px;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.DR-apply-button {
+    background-color: #0093e9;
+    color: white;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.DR-apply-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.DR-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.DR-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .DR-container {
+        padding: 60px 15px;
+    }
+
+    .DR-title {
+        font-size: 2.2rem;
+    }
+
+    .DR-subtitle {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .DR-type-card {
+        padding: 30px 15px;
+        margin-top: -30px;
+    }
+
+    .DR-offer-card {
+        padding: 25px;
+    }
+
+    .DR-description {
+        padding: 40px 15px;
+    }
+
+    .DR-description-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .DR-requirements-container {
+        padding: 40px 15px;
+    }
+
+    .DR-requirements-list {
+        padding: 25px;
+    }
+
+    .DR-apply-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .DR-header-button,
+    .DR-apply-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .DR-scroll-top {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .DR-title {
+        font-size: 2rem;
+    }
+
+    .DR-subtitle {
+        font-size: 1rem;
+    }
+
+    .DR-offer-card {
+        margin: 0 10px;
+    }
+
+    .DR-requirements-list h4 {
+        font-size: 1.3rem;
+    }
+
+    .DR-requirements-list li {
+        font-size: 0.95rem;
+    }
+
+    .DR-scroll-top {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.7rem;
+    }
+}

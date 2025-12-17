@@ -1,0 +1,50 @@
+{
+    "categories": [
+        {
+            "id": "Agricultural",
+            "label": "Agricultural Loans"
+        },
+        {
+            "id": "Commercial",
+            "label": "Commercial Loans"
+        },
+        {
+            "id": "Personal",
+            "label": "Personal Loans"
+        }
+    ],
+    "loanProducts": [
+        {
+            "id": "insta-cash-loan",
+            "icon": "💵",
+            "title": "Insta-Cash Loan",
+            "description": "",
+            "category": "Personal",  
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "visa-loan",
+            "icon": "💳",
+            "title": "Visa Loan",
+            "description": "",
+            "category": "Personal",
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "Mortgage-Facility",
+            "icon": "🏡",
+            "title": "Mortgage Facility",
+            "description": "",
+            "category": "Personal",
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "Hold-Out ",
+            "icon": "🏡",
+            "title": "Hold-Out Against Deposit (Back to Back Loan)",
+            "description": "",
+            "category": "Personal",
+            "route": "/ApplyLoan"
+        }
+    ]
+}

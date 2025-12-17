@@ -1,0 +1,450 @@
+.properties {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.properties-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.properties-header {
+    position: relative;
+    top: 38px;
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+       opacity: 1;
+       transform: translateY(0); 
+    }
+}
+
+
+.properties-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.properties-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.property-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+}
+
+.property-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property-price {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.property-info {
+    padding: 1.5rem;
+}
+
+.property-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.property-location {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.property-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.8rem 0;
+    line-height: 1.4;
+}
+
+.property-details {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    color: #34495e;
+    font-size: 0.9rem;
+}
+
+.property-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f8f9fa;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+}
+
+.view-details {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.view-details:hover {
+    background-color: #2980b9;
+}
+
+/*--Modal--*/
+.overlay-image-container {
+    position: relative;
+    overflow: hidden;
+    width: 600px; /* Or a fixed width like 600px */
+    max-height: 50vh; /* Set a maximum height to prevent very tall images from overflowing */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .image-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    height: 100%; 
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%; /* Make images fill the container */
+    object-fit: cover; 
+    flex-shrink: 0;
+  }
+  
+  .overlay-image-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .overlay-image-nav.prev {
+    left: 10px; /* Adjust as needed */
+  }
+  
+  .overlay-image-nav.next {
+    right: 10px; 
+  }
+  
+
+  .overlay-image-container p {
+      text-align: center;
+      font-style: italic;
+      color: #888;
+      padding: 20px;
+  }
+
+.property-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.overlay-content {
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.overlay-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-info {
+    padding: 2rem;
+}
+
+.overlay-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.overlay-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.overlay-location {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.overlay-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.overlay-details {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.overlay-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #34495e;
+}
+
+.overlay-location-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.map-button-container {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.map-button-container:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.map-button-container i {
+    font-size: 1.1rem;
+}
+
+.map-button-container span {
+    font-weight: 500;
+}
+
+.overlay-contact {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e1e1e1;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.contact-header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.contact-header i {
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-details p {
+    margin: 0;
+    color: #505764;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.contact-details i {
+    color: #3498db;
+    width: 16px;
+}
+
+.contact-details a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .properties-container {
+        padding: 1rem;
+    }
+
+    .properties-header h1 {
+        font-size: 2rem;
+    }
+
+    .properties-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    
+    .property-description {
+        font-size: 0.85rem;
+    }
+
+    .overlay-content {
+        width: 95%;
+    }
+    
+    .overlay-image {
+        height: 200px;
+    }
+    
+    .overlay-info {
+        padding: 1.5rem;
+    }
+    
+    .overlay-info h2 {
+        font-size: 1.5rem;
+    }
+}

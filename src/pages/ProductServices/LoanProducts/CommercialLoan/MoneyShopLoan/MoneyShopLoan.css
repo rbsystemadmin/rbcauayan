@@ -1,0 +1,329 @@
+.Money-Shop-Loan {
+    min-height: 100vh;
+    background-color: #f8fafc;
+    width: 100%;
+}
+
+.MSL-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 2rem);
+}
+
+/*Header Section*/
+.MSL-header-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
+    clip-path: polygon(100% 0, 0 0, 0 85%, 100% 100%);
+}
+
+.MSL-header {
+    gap: 10px;
+    text-align: center;
+    margin: clamp(2rem, 5vw, 4rem) 0;
+    position: relative;
+    animation: fadein 0.8s ease-out;
+    z-index: 1;
+}
+
+.MSL-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+}
+
+.MSL-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3c72, #2563eb);
+    border-radius: 2px;
+}
+
+.MSL-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    color: white;
+    margin-top: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MSL-header-button {
+    width: 7rem;
+    height: 2.5rem;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2a5298;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 100;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.MSL-header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*Description Section*/
+.MSL-description-container {
+    width: 100%;
+    height: 400px;
+}
+
+
+.MSL-description {
+    height: 200px;
+    background: linear-gradient(135deg, #2563eb, #4d7feb);
+    color: white;
+    padding: clamp(2rem, 4vw, 3rem);
+    border-radius: 20px;
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.MSL-description::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1));
+}
+
+.MSL-description p {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Requirements Section*/
+.MSL-requirements {
+    background: white;
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.MSL-requirements:hover {
+    border-color: rgba(30, 60, 114, 0.1);
+    box-shadow: 0 8px 20px rgba(30, 60, 114, 0.15);
+}
+
+.MSL-requirements h2 {
+    color: #1e3c72;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.MSL-requirements h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    border-radius: 2px;
+}
+
+.MSL-requirements-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.MSL-requirements-list li {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-align: center;
+    color: #2a5298;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 500;
+}
+
+.MSL-requirements-list li:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-color: #2a5298;
+    box-shadow: 0 6px 15px rgba(42, 82, 152, 0.15);
+    color: #1e3c72;
+}
+
+/* Apply Section */
+.MSL-appply-container {
+    background: white;
+    border-radius: 24px;
+    padding: clamp(2rem, 4vw, 4rem);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin: 3rem 0;
+    border: 2px solid #2563eb;
+    transition: all 0.3s ease;
+}
+
+.MSL-apply-section h3 {
+    color: #1e293b;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.MSL-apply-section p {
+    color: #64748b;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.MSL-apply-button {
+    background: linear-gradient(135deg, #2563eb, #4d7feb);
+    color: white;
+    border: none;
+    padding: clamp(0.8rem, 1.5vw, 1.2rem) clamp(2rem, 3vw, 3rem);
+    border-radius: 12px;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.MSL-apply-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2));
+    top: 0;
+    left: -100%;
+    transition: 0.3s ease;
+}
+
+.MSL-apply-button:hover {
+    transform: translateY(-2px);
+}
+
+.MSL-apply-button:hover::after {
+    left: 100%;
+}
+
+.MSL-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.MSL-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Desktop-specific enhancements */
+@media (min-width: 768px) {
+    .MSL-offer-card {
+        transform-origin: center;
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+    .MSL-container {
+        padding: 1rem;
+    }
+
+    .MSL-offer-card {
+        padding: 1.5rem;
+    }
+
+    .MSL-offer-card:hover,
+    .MSL-appply-container:hover {
+        transform: none;
+    }
+
+    .MSL-apply-button:hover {
+        transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure text remains crisp on mobile */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    .MSL-title,
+    .MSL-subtitle,
+    .MSL-offer-card h3,
+    .MSL-offer-card p,
+    .MSL-description p,
+    .MSL-apply-section h3,
+    .MSL-apply-section p {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "properties": [
+        {
+            "id": 1,
+            "title": "Residential Lot w/Bldg.",
+            "price": "₱2,800,000",
+            "location": "San Juan, Cabagan, Isabela",
+            "description": "...",
+            "sqfm": "127",
+            "image": "/src/Assets/House.jpg",
+            "images": ["/src/Assets/House.jpg", "/src/Assets/House-1.jpg", "/src/Assets/House-2.jpeg"] 
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "categories": [
+        {
+            "id": "Agricultural",
+            "label": "Agricultural Loans"
+        },
+        {
+            "id": "Commercial",
+            "label": "Commercial Loans"
+        },
+        {
+            "id": "Personal",
+            "label": "Personal Loans"
+        }
+        
+    ],
+    "loanProducts": [
+        {
+            "id": "nego-asenso-loan",
+            "icon": "🏦",
+            "title": "Nego-Asenso Loan (Small & Medium Enterprise)",
+            "description": "",
+            "category": "Commercial",
+            "features": [
+                "Flexible repayment terms",
+                "Competitive interest rates", 
+                "Quick approval process"
+            ],
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "ka-asenso-loan",
+            "icon": "🏦",
+            "title": "Ka-Asenso Loan (Commercial Loan)", 
+            "description": "",
+            "category": "Commercial",
+            "features": [
+                "Up to 7 years repayment",
+                "Low down payment",
+                "Fixed interest rates"
+            ],
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "small-business-loan",
+            "icon": "🏦",
+            "title": "Small Business Loan",
+            "description": "",
+            "category": "Commercial",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/ApplyLoan"
+        },
+        {
+            "id": "credit-line-facility",
+            "icon": "🏦",
+            "title": "Credit Line Facility", 
+            "description": "",
+            "category": "Commercial",
+            "features": [
+                "Extended repayment period",
+                "Customizable terms",
+                "Comprehensive coverage"
+            ],
+            "route": "/ApplyLoan"
+        }        
+    ]
+}

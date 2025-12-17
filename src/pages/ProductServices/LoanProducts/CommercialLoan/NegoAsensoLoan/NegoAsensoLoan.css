@@ -1,0 +1,315 @@
+.Nego-Asenso-Loan {
+    min-height: 100vh;
+    background-color: #f8fafc;
+    width: 100%;
+}
+
+.NAL-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 2rem);
+}
+
+/*Header Section*/
+.NAL-header-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
+    clip-path: polygon(100% 0, 0 0, 0 85%, 100% 100%);
+}
+
+.NAL-header {
+    gap: 10px;
+    text-align: center;
+    margin: clamp(2rem, 5vw, 4rem) 0;
+    position: relative;
+    animation: fadein 0.8s ease-out;
+    z-index: 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.NAL-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+}
+
+.NAL-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
+    border-radius: 2px;
+}
+
+.NAL-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.NAL-header-button {
+    width: 7rem;
+    height: 2.5rem;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2a5298;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 100;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.NAL-header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Description Container*/
+.NAL-description-container {
+    width: 100%;
+    height: 400px;
+}
+
+.NAL-description {
+    height: 200px;
+    color: #2a5298;
+    padding: clamp(2rem, 4vw, 3rem);
+    border-radius: 16px;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.NAL-description p {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Requirements Section*/
+.NAL-requirements {
+    background: white;
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .NAL-requirements:hover {
+    border-color: rgba(30, 60, 114, 0.1);
+    box-shadow: 0 8px 20px rgba(30, 60, 114, 0.15);
+  }
+  
+  .NAL-requirements h2 {
+    color: #1e3c72;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    position: relative;
+  }
+  
+  .NAL-requirements h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    border-radius: 2px;
+  }
+  
+  .NAL-requirements-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .NAL-requirements-list li {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-align: center;
+    color: #2a5298;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 500;
+  }
+  
+  .NAL-requirements-list li:hover {
+    transform: translateY(-5px);
+    background: white;
+    border-color: #2a5298;
+    box-shadow: 0 6px 15px rgba(42, 82, 152, 0.15);
+    color: #1e3c72;
+  }
+
+/*Apply Section*/
+.NAL-apply-container {
+    background: white;
+    border-radius: 20px;
+    padding: clamp(2rem, 4vw, 4rem);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin: 3rem 0;
+    border: 2px solid #2563eb;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.1);
+}
+
+.NAL-apply-section h3 {
+    color: #1e293b;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.NAL-apply-section p {
+    color: #546e7a;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.NAL-apply-button {
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    color: white;
+    border: none;
+    padding: clamp(0.8rem, 1.5vw, 1.2rem) clamp(2rem, 3vw, 3rem);
+    border-radius: 8px;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.NAL-apply-button:hover {
+    background: white;
+    color: #2563eb;
+    border-color: #2563eb;
+}
+
+.NAL-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.NAL-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Desktop-specific enhancements */
+@media (min-width: 768px) {
+    .NAL-offer-card {
+        transform-origin: center;
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+    .NAL-container {
+        padding: 1rem;
+    }
+
+    .NAL-offer-card {
+        padding: 1.5rem;
+    }
+
+    .NAL-offer-card:hover {
+        transform: none;
+    }
+
+    .NAL-apply-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .NAL-apply-container:hover {
+        transform: none;
+        border-color: #2563eb;
+    }
+
+    .NAL-description {
+        margin: 2rem 0;
+    }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure text remains crisp on mobile */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    .NAL-title,
+    .NAL-subtitle,
+    .NAL-offer-card h3,
+    .NAL-offer-card p,
+    .NAL-description p,
+    .NAL-apply-section h3,
+    .NAL-apply-section p {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}

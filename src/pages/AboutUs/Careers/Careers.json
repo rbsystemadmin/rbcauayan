@@ -1,0 +1,46 @@
+{
+    "departments": [
+        "All",
+        "Audit",
+        "Accounting",
+        "Lending",
+        "Credit Investigation",
+        "IT",
+        "Compliance",
+        "Services and Maintenance",
+        "Cash Unit",
+        "Operation"
+    ],
+    "jobs": [
+        {
+            "id": 1,
+            "title": "Loans Bookkeeper ",
+            "department": "Operation",
+            "location": "Cauayan, Ramon, Alicia, Isabela",
+            "type": "Full-time",
+            "experience": "Associates (Fresh Graduates are Welcome to Apply)",
+            "description": "Responsible for the efficient processing of loan applications, proper documentation, and safekeeping of all loan documents.  Provides general lending information to customers, interviews and takes loan applications.",
+            "requirements": [
+                "Bachelor's degree in Finance, or related field"
+            ],
+            "benefits": [
+                "to be disclosed on interview"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "New Accounts Clerk ",
+            "department": "Operation",
+            "location": "Cauayan, Ramon, Alicia, Isabela",
+            "type": "Full-time",
+            "experience": "Associates (Fresh Graduates are Welcome to Apply)",
+            "description": "Is responsible for handling, filing and documentation of all deposit accounts.  Handles clients’ inquiries and processes account opening",
+            "requirements": [
+                "Bachelor's degree in Finance, or related field"
+            ],
+            "benefits": [
+                "to be disclosed on interview"
+            ]
+        }
+    ]
+}

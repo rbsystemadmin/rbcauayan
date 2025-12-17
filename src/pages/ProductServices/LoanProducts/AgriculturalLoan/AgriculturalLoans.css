@@ -1,0 +1,175 @@
+.AL-personal-loans {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8faff 0%, #f0f5ff 100%);
+}
+
+.AL-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.AL-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeInDown 0.8s ease;
+}
+
+.AL-title {
+    position: relative;
+    top: 30px;
+    font-size: 3rem;
+    color: #1a1f36;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #1a1f36 0%, #4f566b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.AL-subtitle {
+    font-size: 1.2rem;
+    color: #4f566b;
+    font-weight: 500;
+}   
+
+.AL__categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.AL__category-button {
+    padding: 12px 25px;
+    background-color: var(--background-light);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.AL__category-button:hover {
+    color: var(--primary-color);
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.1);
+    border-color: var(--primary-color);
+}
+
+.AL__category-button--active {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+.AL__category-button--active:hover {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+
+
+.AL-loan-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.AL-loan-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.AL-loan-card:hover {
+    transform: translateY(-8px);
+    border-color: #6772e5;
+    box-shadow: 0 20px 40px rgba(103, 114, 229, 0.15);
+}
+
+.AL-loan-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.AL-loan-card h3 {
+    color: #1a1f36;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.AL-loan-card p {
+    color: #4f566b;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.AL-learn-more {
+    background: transparent;
+    border: 2px solid #6772e5;
+    color: #6772e5;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.AL-learn-more:hover {
+    background: #6772e5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 968px) {
+    .AL-container {
+        padding: 1.5rem;
+    }
+
+    .AL-title {
+        font-size: 2.5rem;
+    }
+
+    .AL-loan-types {
+        grid-template-columns: 1fr;
+    }
+    
+    .AL__category-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .AL-loan-card {
+        backdrop-filter: none;
+        background: #ffffff;
+    }
+}

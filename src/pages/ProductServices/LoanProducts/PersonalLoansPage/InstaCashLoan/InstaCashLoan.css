@@ -1,0 +1,362 @@
+.Insta-Cash-Loan {
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+
+.ICL-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ICL-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="%23FFFFFF10" d="M45,-78.1C58.3,-71.3,68.6,-58.4,75.7,-43.9C82.8,-29.4,86.6,-13.2,85.8,2.8C85,18.8,79.6,34.6,70.5,47.8C61.4,61,48.6,71.5,34.1,76.7C19.6,81.9,3.5,81.8,-12.4,78.9C-28.3,76,-44,70.3,-56.8,60.1C-69.6,49.9,-79.5,35.2,-84.3,18.5C-89.1,1.8,-88.8,-16.8,-82.2,-32.2C-75.6,-47.6,-62.7,-59.8,-47.8,-65.9C-32.9,-72,-16.4,-72,0.3,-72.5C17,-73,34,-84.9,45,-78.1Z" transform="translate(100 100)"/></svg>') center/cover;
+    opacity: 0.1;
+    animation: pulse 15s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+
+.ICL-header {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    animation: fadein 0.8s ease-out;
+    z-index: 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.ICL-title {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.ICL-subtitle {
+    color: #ffffff;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+.ICL-header-button {
+    background-color: #1c7fdb;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.ICL-header-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.ICL-type-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: -40px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.ICL-offer-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ICL-card-accent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #005fb8, #0093e9);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.ICL-offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.ICL-offer-card:hover .ICL-card-accent {
+    transform: scaleX(1);
+}
+
+.ICL-offer-icon {
+    font-size: 2.5rem;
+    color: #005fb8;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.ICL-offer-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.ICL-description {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.ICL-description-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ICL-description-content h2 {
+    color: #005fb8;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.ICL-description-content p {
+    color: #005fb8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ICL-requirements-container {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.ICL-requirements-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.ICL-requirements-list h4 {
+    color: #005fb8;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.ICL-requirements-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ICL-requirements-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eef2f7;
+    color: #2c3e50;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 25px;
+    transition: all 0.3s ease;
+}
+
+.ICL-requirements-list li:before {
+    content: "✓";
+    color: #005fb8;
+    position: absolute;
+    left: 0;
+}
+
+.ICL-requirements-list li:hover {
+    padding-left: 30px;
+    color: #005fb8;
+}
+
+.ICL-apply-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 70px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ICL-apply-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.ICL-apply-section p {
+    margin-bottom: 30px;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.ICL-apply-button {
+    background-color: #1c7fdb;
+    color: white;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.ICL-apply-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.ICL-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .ICL-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+@media (max-width: 768px) {
+    .ICL-container {
+        padding: 60px 15px;
+    }
+
+    .ICL-title {
+        font-size: 2.2rem;
+    }
+
+    .ICL-subtitle {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .ICL-type-card {
+        padding: 30px 15px;
+        margin-top: -30px;
+    }
+
+    .ICL-offer-card {
+        padding: 25px;
+    }
+
+    .ICL-description {
+        padding: 40px 15px;
+    }
+
+    .ICL-description-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .ICL-requirements-container {
+        padding: 40px 15px;
+    }
+
+    .ICL-requirements-list {
+        padding: 25px;
+    }
+
+    .ICL-apply-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .ICL-header-button,
+    .ICL-apply-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .ICL-scroll-top {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ICL-title {
+        font-size: 2rem;
+    }
+
+    .ICL-subtitle {
+        font-size: 1rem;
+    }
+
+    .ICL-offer-card {
+        margin: 0 10px;
+    }
+
+    .ICL-requirements-list h4 {
+        font-size: 1.3rem;
+    }
+
+    .ICL-requirements-list li {
+        font-size: 0.95rem;
+    }
+
+    .ICL-scroll-top {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.7rem;
+    }
+}

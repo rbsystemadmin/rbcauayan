@@ -1,0 +1,46 @@
+{
+    "balancesheets": [
+        {
+            "id": 1006,
+            "year": "2025",
+            "title": "Balance Sheet",
+            "videoUrl": "/September2025.mp4",
+            "pdfUrl": "/pdfs/Balance_Sheet_September_2025.pdf"
+        },
+        {
+            "id": 1005,
+            "year": "2025",
+            "title": "Balance Sheet",
+            "videoUrl": "/JuneNew2025.mp4",
+            "pdfUrl": "/pdfs/Balance_Sheet_June_2025_2ndQ.pdf"
+        },
+        {
+            "id": 1004,
+            "year": "2025",
+            "title": "Balance Sheet",
+            "videoUrl": "/March2025.mp4",
+            "pdfUrl": "/pdfs/Balance_Sheet_March_2025.pdf"
+        },
+        {
+            "id": 1003,
+            "year": "2024",
+            "title": "Balance Sheet",
+            "videoUrl": "/December2024.mp4",
+            "pdfUrl": "/pdfs/Balance Sheet_December 31, 2024.pdf"
+        },
+        {
+            "id": 1002,
+            "year": "2024",
+            "title": "Balance Sheet",
+            "videoUrl": "/June2024.mp4",
+            "pdfUrl": "/pdfs/Balance Sheet_June 30, 2024_2ndQ.pdf"
+        },
+        {
+            "id": 1001,
+            "year": "2024",
+            "title": "Balance Sheet",
+            "videoUrl": "/September2024.mp4",
+            "pdfUrl": "/pdfs/Balance Sheet_September 30, 2024.pdf"
+        }
+    ]
+}

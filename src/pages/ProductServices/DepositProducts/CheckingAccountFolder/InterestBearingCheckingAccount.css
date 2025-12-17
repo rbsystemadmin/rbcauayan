@@ -1,0 +1,433 @@
+.IBCA-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.IBCA-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(135deg, rgba(0, 51, 102, 0.03) 0%, transparent 50%),
+        linear-gradient(45deg, rgba(0, 77, 153, 0.03) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.IBCA-hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    height: 225px;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(30, 60, 114, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.IBCA-hero-content {
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.IBCA-hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    transition: transform 0.3s ease;
+}
+
+.IBCA-hero-content h1:hover {
+    transform: scale(1.02);
+}
+
+.IBCA-hero-content p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+.IBCA-header-button {
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: white;
+    background-color: #2a5298;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.IBCA-header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.IBCA-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Benefits Section */
+.IBCA-benefits {
+    margin-bottom: 4rem;
+}
+
+.IBCA-benefits h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #003366;
+    font-size: 2.2rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.IBCA-benefits h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #003366;
+    border-radius: 2px;
+}
+
+.IBCA-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+.IBCA-benefit-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.IBCA-benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: #003366;
+    background-color: #f8fafc;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
+}
+
+.IBCA-benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #003366;
+    transition: all 0.3s ease;
+}
+
+.IBCA-benefit-card:hover .IBCA-benefit-icon {
+    transform: scale(1.1) rotate(5deg);
+    color: #004d99;
+}
+
+.IBCA-benefit-card h3 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.IBCA-benefit-card:hover h3 {
+    color: #004d99;
+}
+
+/* Description Section */
+.IBCA-description-section {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.IBCA-description-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.IBCA-description-container h2 {
+    color: #003366;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.IBCA-description-container p {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    
+}
+
+/* Features Section */
+.IBCA-features {
+    background: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.IBCA-features:hover {
+    border-color: #003366;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
+}
+
+
+.IBCA-features-description {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    line-height: 1.6;
+    color: #4f566b;
+    font-size: 1rem;
+    max-width: 100%;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.IBCA-features-description:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.IBCA-features-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.IBCA-features-list li:hover {
+    background-color: #f8fafc;
+    transform: translateX(10px);
+    color: #003366;
+}
+
+.IBCA-check {
+    color: #004d99;
+    margin-right: 1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.IBCA-features-list li:hover .IBCA-check {
+    transform: scale(1.2);
+}
+
+/* Requirements Section */
+.IBCA-requirements {
+    margin-bottom: 4rem;
+}
+
+.IBCA-requirements h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #003366;
+    font-size: 2.2rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.IBCA-requirements h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #003366;
+    border-radius: 2px;
+}
+
+.IBCA-requirements-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.IBCA-requirement-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    height: 85%;
+    position: relative;
+    z-index: 1;
+}
+
+.IBCA-requirement-item:hover {
+    transform: translateY(-5px);
+    border-color: #003366;
+    background-color: #f8fafc;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
+}
+
+.IBCA-requirement-item li {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.IBCA-requirement-item li:hover {
+    background-color: #f8fafc;
+    padding-left: 2rem;
+    color: #003366;
+}
+
+.IBCA-requirement-item li:before {
+    content: "•";
+    color: #004d99;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.IBCA-requirement-item li:hover:before {
+    transform: scale(1.2);
+}
+
+/* CTA Section */
+.IBCA-cta {
+    background: linear-gradient(135deg, #004d99 0%, #003366 100%);
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.IBCA-cta-button {
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.IBCA-cta-button.primary {
+    background: white;
+    color: #003366;
+    border: 2px solid white;
+}
+
+.IBCA-cta-button.primary:hover {
+    background: #003366;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+
+.IBCA-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .IBCA-scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+
+@media (max-width: 768px) {
+    .IBCA-hero {
+        padding: 3rem 1rem;
+    }
+
+    .IBCA-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .IBCA-wrapper {
+        padding: 0 1rem;
+    }
+
+    .IBCA-features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .IBCA-cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .IBCA-cta-button {
+        width: 100%;
+    }
+
+    .IBCA-requirements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .IBCA-features-description {
+        padding: 1rem;
+        margin: 0.75rem 0;
+        font-size: 0.95rem;
+    }
+}

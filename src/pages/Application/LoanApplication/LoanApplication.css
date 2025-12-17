@@ -1,0 +1,247 @@
+/* Main container styles */
+.LAP-loan-application {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.LAP-loan-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    position: relative;
+}
+
+/* Header styles */
+.LAP-loan-header {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaedf3;
+}
+
+.LAP-loan-header h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.LAP-subtitle {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* Content layout */
+.LAP-loan-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.LAP-loan-form-section {
+    flex: 1 1 60%;
+    min-width: 300px;
+}
+
+.LAP-loan-info-section {
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+/* Form styles */
+.LAP-loan-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.LAP-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.LAP-form-group label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-size: 15px;
+}
+
+.LAP-form-group input,
+.LAP-form-group select,
+.LAP-form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #6b7482;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.LAP-form-group input:focus,
+.LAP-form-group select:focus,
+.LAP-form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.LAP-form-group input::placeholder,
+.LAP-form-group textarea::placeholder {
+    color: #b2bec3;
+}
+
+.LAP-form-action {
+    margin-top: 15px;
+}
+
+/* Button styles */
+.LAP-back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #3498db;
+    color: #3498db;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.LAP-back-button:hover {
+    background-color: #f0f7fc;
+}
+
+.LAP-back-icon {
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.LAP-submit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.LAP-submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+.LAP-submit-button:active {
+    transform: translateY(1px);
+}
+
+/* Info card styles */
+.LAP-info-card {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 25px;
+    height: 100%;
+    border: 1px solid #ebeef4;
+}
+
+.LAP-info-card h2 {
+    color: #3498db;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.LAP-info-card p {
+    color: #576574;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.LAP-info-points {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.LAP-info-point {
+    display: flex;
+    align-items: center;
+}
+
+.LAP-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #e3f2fd;
+    color: #3498db;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* Loading and error states */
+.LAP-loading-container,
+.LAP-error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.LAP-error-container {
+    color: #e74c3c;
+}
+
+.LAP-message-box {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.LAP-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.LAP-error {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .LAP-loan-content {
+        flex-direction: column-reverse;
+    }
+
+    .LAP-back-button {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .LAP-loan-container {
+        padding: 20px;
+    }
+}

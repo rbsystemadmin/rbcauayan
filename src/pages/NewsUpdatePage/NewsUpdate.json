@@ -1,0 +1,114 @@
+{
+    "categories": [
+        {
+            "id": "News",
+            "label": "News"
+        },
+        {
+            "id": "Events",
+            "label": "Events"
+        },
+        {
+            "id": "Archive",
+            "label": "Archive"
+        }
+    ],
+    "news": [
+        {
+            "id": 1,
+            "title": "Bank Advisory: ",
+            "description": "All Branches of Rural Bank of Cauayan are closed today October 24, 2024 due to Severe Tropical Storm Kristine",
+            "category": "News",
+            "image": "/src/Assets/walangpasok.png",
+            "date": "October 24, 2024"
+        },
+        {
+            "id": 2,
+            "title": "Deposit Insuranace: ",
+            "description": "Proteksyong Maaasahan sa Ipong Pinaghirapan",
+            "category": "News",
+            "image": "/src/Assets/Deposit Insurance.png",
+            "date": "June 16, 2024"
+        },
+        {
+            "id": 3,
+            "title": "Holy Week",
+            "description": "All Branches will be Closed",
+            "category": "News",
+            "image": "/src/Assets/holyweek.jpeg",
+            "date": "March 28, 2024"
+        },
+        {
+            "id": 4,
+            "title": "National Banking Week",
+            "description": "Financial Stability, Foundation of Prosperity",
+            "category": "Events",
+            "image": "/src/Assets/NationalBankingWeek2024.jpg",
+            "date": "December 23, 2023"
+        },
+        {
+            "id": 5,
+            "title": "45th National Disability Prevention & Rehabilitation Week",
+            "description": "Persons with Disabilities Accesibility and Rights: Towards a sustainable future where no one is left behind (July 17 - 23)",
+            "category": "Events",
+            "image": "/src/Assets/NationalDisabilityAffairs.jpg",
+            "date": "july 17, 2023"
+        },
+        {
+            "id": 6,
+            "title": "Saving Consciousness Week",
+            "description": "Magimpok at mamuhunan para sa magandang kinabukasan. Savings Consciousness Week June 30-July 6, 2023.",
+            "category": "Events",
+            "image": "/src/Assets/SavingsConciousnessWeek.jpg",
+            "date": "June 30, 2023"
+        },
+        {
+            "id": 7,
+            "title": "Holiday Advisory",
+            "description": "Please be advised that all rbci branches will be closed on june 28, 2023 in observance of EID'L Adha",
+            "category": "News",
+            "image": "/src/Assets/HolidayAdvisory.png",
+            "date": "June 28, 2023"
+        },
+        {
+            "id": 8,
+            "title": "Motorcade at Rural Bank",
+            "description": "Motorcade at Rural Bank, on the day February 3 - 4, 2025",
+            "category": "News",
+            "image": "/src/Assets/Motorcade2025.png",
+            "date": "February 3, 2025"
+        },
+        {
+            "id": 9,
+            "title": "Depositor Protection Awareness Week",
+            "description": "Observance of the 23rd Depositor Protection Awareness Week from 16 to 22 June 2025",
+            "category": "News",
+            "image": "/src/Assets/Streamer23rdDPAWFinal1.jpg",
+            "date": "June 16, 2025"
+        },
+        {
+            "id": 10,
+            "title": "Rural Banking Consciousness Week",
+            "description": "Rural Banks as Gateways for Economic Empowerment",
+            "category": "News",
+            "image": "/src/Assets/RuralBankingConciousnessWeek.jpg",
+            "date": "August 22, 2025"
+        },
+        {
+            "id": 11,
+            "title": "36th National Statistic Month ",
+            "description": "Accelarating the SDG Pace of Progress: Mobilizing Data for All",
+            "category": "News",
+            "image": "/src/Assets/36thNationalStatisticsMonth.jpg",
+            "date": "October 1, 2025"
+        },
+        {
+            "id": 12,
+            "title": "Coming Soon",
+            "description": "Coming Soon",
+            "category": "News",
+            "image": "/src/Assets/ComingSoon.png",
+            "date": "October 0, 2025"
+        }
+    ]
+}
