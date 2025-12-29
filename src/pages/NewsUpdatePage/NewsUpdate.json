@@ -102,8 +102,16 @@
             "image": "/src/Assets/36thNationalStatisticsMonth.jpg",
             "date": "October 1, 2025"
         },
-        {
+         {
             "id": 12,
+            "title": "National Banking Week, 01-07 January 2026",
+            "description": "#NationalBankingWeek2026 #NBWeek2026",
+            "category": "News",
+            "image": "/src/Assets/NBW2026.png",
+            "date": "January 1, 2026"
+        },
+        {
+            "id": 13,
             "title": "Coming Soon",
             "description": "Coming Soon",
             "category": "News",
