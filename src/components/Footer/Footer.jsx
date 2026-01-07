@@ -34,6 +34,21 @@ function Footer() {
                     <h3>Contact Info</h3>
                     <ul>
                         <li>Email: hrad-a2@rbcauayan.com</li>
+                        <li>
+                            <a href="https://rbcauayan.com/A&U/ContactUs">Email for Loans: Click here</a>
+                        </li>
+                        <li>
+                            Email for Applicants:{" "}
+                            <span
+                                style={{ cursor: "pointer", textDecoration: "underline" }}
+                                onClick={() => {
+                                    navigator.clipboard.writeText("hrad-er-recruitment@rbcauayan.com");
+                                    alert("Email copied!");
+                                }}
+                            >
+                                hrad-er-recruitment@rbcauayan.com
+                            </span>
+                        </li>
                         <li>Phone: (078) 652-1016</li>
                         <li>
                             Address: Don Jose Canciller Ave.
