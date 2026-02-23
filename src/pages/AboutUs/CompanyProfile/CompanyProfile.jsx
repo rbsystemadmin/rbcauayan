@@ -16,7 +16,6 @@ import MaamMarissa from '../../../Assets/MaamMarissa.jpg';
 import MaamReggie from '../../../Assets/MaamReggie.jpg';
 import MaamAi from '../../../Assets/MaamAi.jpg';
 import MaamTeresita from '../../../Assets/MaamTeresita.jpeg';
-import MaamAgnes from '../../../Assets/MaamAgnes.jpg';
 
 
 function CompanyProfile() {
@@ -39,7 +38,6 @@ function CompanyProfile() {
     ];
 
     const COO2 = [
-        { src: MaamAgnes, name: "Agnes A. Obligado", title: "Chief Operating Officer" },
         { src: MaamAi, name: "Aileen V. Barlis", title: "Chief Operating Officer" }
     ];
 
