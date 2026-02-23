@@ -116,6 +116,7 @@
             "description": "Coming Soon",
             "category": "News",
             "image": "/src/Assets/ComingSoon.png",
+<<<<<<< HEAD
             "date": "March 1, 2026"
         },
         {
@@ -125,6 +126,9 @@
             "category": "News",
             "image": "/src/Assets/ComingSoon.png",
             "date": "April 1, 2026"
+=======
+            "date": "October 0, 2025"
+>>>>>>> parent of fdbc3e4 (Test Upload)
         }
     ]
 }
