@@ -117,6 +117,14 @@
             "category": "News",
             "image": "/src/Assets/ComingSoon.png",
             "date": "March 1, 2026"
+        },
+        {
+            "id": 14,
+            "title": "Coming Soon Enough",
+            "description": "Coming Soon",
+            "category": "News",
+            "image": "/src/Assets/ComingSoon.png",
+            "date": "April 1, 2026"
         }
     ]
 }
