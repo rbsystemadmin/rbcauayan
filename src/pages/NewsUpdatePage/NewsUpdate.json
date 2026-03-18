@@ -117,14 +117,7 @@
             "category": "News",
             "image": "/src/Assets/bsp03-18-26.png",
             "date": "March 18, 2026"
-        },
-        {
-            "id": 14,
-            "title": "Coming Soon",
-            "description": "Coming Soon",
-            "category": "News",
-            "image": "/src/Assets/ComingSoon.png",
-            "date": "March 20, 2026"
         }
+        
     ]
 }
