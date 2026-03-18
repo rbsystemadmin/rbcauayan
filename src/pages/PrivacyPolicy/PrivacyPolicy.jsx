@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; // Add this line
+
 import { useEffect } from 'react';
 
 import Navbar from "../../components/Navbar/Navbar";
