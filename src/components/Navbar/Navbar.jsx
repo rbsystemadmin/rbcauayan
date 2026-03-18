@@ -54,7 +54,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Desktop Logo Container - Only visible on desktop */}
+        {/* Desktop Logo Container */}
         <div className="Navbar-desktop-logo-container">
           <div className="Navbar-desktop-brand-wrapper">
             <Link to="/">
@@ -71,7 +71,6 @@ const Navbar = () => {
         <ul className="Navbar-desktop-nav">
           <li><Link to="/" className="Navbar-nav-link">Home</Link></li>
           
-          {/* Products and Services Dropdown */}
           <li 
             className="Navbar-dropdown-container"
             onMouseEnter={toggleProductsDropdown}
@@ -140,7 +139,6 @@ const Navbar = () => {
             )}
           </li>
           
-          {/* About Us Dropdown */}
           <li 
             className="Navbar-dropdown-container"
             onMouseEnter={toggleAboutDropdown}
@@ -163,6 +161,8 @@ const Navbar = () => {
           
           <li><Link to="/ROPA" className="Navbar-nav-link">ROPA</Link></li>
           <li><Link to="/N&U" className="Navbar-nav-link">News and Update</Link></li>
+          {/* Added Privacy Policy */}
+          <li><Link to="/privacy-policy" className="Navbar-nav-link">Privacy Policy</Link></li>
         </ul>
 
         {/* Mobile Menu Toggle */}
@@ -180,21 +180,14 @@ const Navbar = () => {
           <ul className="Navbar-mobile-nav">
             <li><Link to="/" className="Navbar-mobile-nav-link" onClick={toggleMenu}>Home</Link></li>
             
-            {/* Mobile Products and Services Dropdown */}
             <li>
-              <div 
-                className="Navbar-mobile-dropdown-toggle"
-                onClick={toggleProductsDropdown}
-              >
+              <div className="Navbar-mobile-dropdown-toggle" onClick={toggleProductsDropdown}>
                 Products and Services {isProductsDropdownOpen ? '▲' : '▼'}
               </div>
               {isProductsDropdownOpen && (
                 <ul className="Navbar-mobile-dropdown-menu">
                   <li>
-                    <div 
-                      className="Navbar-mobile-nested-toggle"
-                      onClick={() => toggleMobileNestedMenu('deposit')}
-                    >
+                    <div className="Navbar-mobile-nested-toggle" onClick={() => toggleMobileNestedMenu('deposit')}>
                       Deposit Products {mobileNestedMenu === 'deposit' ? '▲' : '▼'}
                     </div>
                     {mobileNestedMenu === 'deposit' && (
@@ -209,10 +202,7 @@ const Navbar = () => {
                     )}
                   </li>
                   <li>
-                    <div 
-                      className="Navbar-mobile-nested-toggle"
-                      onClick={() => toggleMobileNestedMenu('loan')}
-                    >
+                    <div className="Navbar-mobile-nested-toggle" onClick={() => toggleMobileNestedMenu('loan')}>
                       Loan Products {mobileNestedMenu === 'loan' ? '▲' : '▼'}
                     </div>
                     {mobileNestedMenu === 'loan' && (
@@ -224,10 +214,7 @@ const Navbar = () => {
                     )}
                   </li>
                   <li>
-                    <div 
-                      className="Navbar-mobile-nested-toggle"
-                      onClick={() => toggleMobileNestedMenu('services')}
-                    >
+                    <div className="Navbar-mobile-nested-toggle" onClick={() => toggleMobileNestedMenu('services')}>
                       Other Services {mobileNestedMenu === 'services' ? '▲' : '▼'}
                     </div>
                     {mobileNestedMenu === 'services' && (
@@ -242,12 +229,8 @@ const Navbar = () => {
               )}
             </li>
             
-            {/* Mobile About Us Dropdown */}
             <li>
-              <div 
-                className="Navbar-mobile-dropdown-toggle"
-                onClick={toggleAboutDropdown}
-              >
+              <div className="Navbar-mobile-dropdown-toggle" onClick={toggleAboutDropdown}>
                 About Us {isAboutDropdownOpen ? '▲' : '▼'}
               </div>
               {isAboutDropdownOpen && (
@@ -262,6 +245,8 @@ const Navbar = () => {
             </li>
             <li><Link to="/ROPA" className="Navbar-mobile-nav-link" onClick={toggleMenu}>ROPA</Link></li>
             <li><Link to="/N&U" className="Navbar-mobile-nav-link" onClick={toggleMenu}>News and Update</Link></li>
+            {/* Added Privacy Policy */}
+            <li><Link to="/privacy-policy" className="Navbar-mobile-nav-link" onClick={toggleMenu}>Privacy Policy</Link></li>
           </ul>
         )}
       </div>

@@ -38,6 +38,7 @@ import NewsUpdatePage from './pages/NewsUpdatePage/NewsUpdate';
 import Properties from './pages/ROPA/Properties';
 import TermsCondition from './pages/Application/TermsCondition';
 import LoanApplication from './pages/Application/LoanApplication/LoanApplication';
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy.jsx";
 
 
 function App() {
@@ -95,6 +96,8 @@ function App() {
             <Route path="/T&C" element={<TermsCondition />} />
 
             <Route path="/ApplyLoan" element={<LoanApplication />} />
+            {/* Privacy Policy */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
       </div>
