@@ -117,6 +117,14 @@
             "category": "News",
             "image": "/src/Assets/bsp03-18-26.jpg",
             "date": "March 18, 2026"
+        },
+         {
+            "id": 14,
+            "title": "Credit Consciousness Week",
+            "description": "Protect Your Money Campaign",
+            "category": "News",
+            "image": "/src/Assets/creeditweek2026.jpg",
+            "date": "April 23, 2026"
         }
         
     ]
