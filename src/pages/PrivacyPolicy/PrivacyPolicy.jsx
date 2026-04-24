@@ -34,18 +34,22 @@ function PrivacyPolicy() {
 
                 <div className='PP-content-section'>
                     <div className='PP-main-card'>
-                        <p className="PP-last-updated">Last Updated: March 18, 2026</p>
-                        <div className="row justify-content-left">
-                            <img src={dps} alt="RBCI Seal" className="dpstyle" />
+                        <p className="PP-last-updated">Last Updated: April 24, 2026</p>
+                        <div className="PP-two-column">
+                            <div className="PP-image-column text-center">
+                                <img src={dps} alt="RBCI Seal" className="dpstyle" />
+                            </div>
+                            <div className="PP-text-column text-center">
+                                <section className="PP-section">
+                                    <p className="PP-intro">
+                                        <h2>RURAL BANK OF CAUAYAN INC.</h2> Respects your right to privacy and is committed to protecting your personal data in accordance with the Data Privacy Act of 2012 (Republic Act No. 10173), its Implementing Rules and Regulations, and issuances of the National Privacy Commission (NPC).
+                                    </p>
+                                </section>
+                            </div>
                         </div>
-                        
+
                         <div className="PP-article">
-                            {/* Introduction */}
-                            <section className="PP-section">
-                                <p className="PP-intro">
-                                    <strong>RURAL BANK OF CAUAYAN INC.</strong> respects your right to privacy and is committed to protecting your personal data in accordance with the Data Privacy Act of 2012 (Republic Act No. 10173), its Implementing Rules and Regulations, and issuances of the National Privacy Commission (NPC).
-                                </p>
-                            </section>
+
 
                             {/* Collection of Personal Data */}
                             <section className="PP-section">
