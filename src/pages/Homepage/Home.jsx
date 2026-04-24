@@ -258,12 +258,12 @@ function Home() {
                     </div>
                     <div className="stat-card">
                         <span className="prefix"></span>
-                        <h3>60 Years</h3>
+                        <h3>61 Years</h3>
                         <span className="label">In Service</span>
                     </div>
                     <div className="stat-card">
                         <span className="prefix">Total of</span>
-                        <h3>16</h3>
+                        <h3>15</h3>
                         <span className="label">Branches</span>
                     </div>
                     <div className="stat-card">
