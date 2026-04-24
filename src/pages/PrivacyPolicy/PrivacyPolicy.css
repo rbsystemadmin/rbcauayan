@@ -97,3 +97,72 @@
     .PP-header-content h1 { font-size: 1.8rem; }
     .PP-main-card { padding: 25px; }
 }
+
+/* Add to your existing PrivacyPolicy.css */
+
+.PP-intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.PP-section h2 {
+    font-size: 1.35rem;
+    color: #2c5f2d;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.PP-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.PP-section ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.PP-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.PP-rights-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.PP-rights-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.PP-section a {
+    color: #2c5f2d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.PP-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .PP-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .PP-rights-list ul {
+        grid-template-columns: 1fr;
+    }
+}
