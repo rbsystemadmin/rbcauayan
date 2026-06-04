@@ -125,6 +125,14 @@
             "category": "News",
             "image": "/src/Assets/creditweek2026.jpeg",
             "date": "April 23, 2026"
+        },
+         {
+            "id": 15,
+            "title": "Depositor Protection and Awareness Week ",
+            "description": "Observance of the 24th Depositor Protection and Awareness Week from 16 to 22 June 2026",
+            "category": "News",
+            "image": "/src/Assets/june 04 2026.jpg",
+            "date": "June 04, 2026"
         }
         
     ]
