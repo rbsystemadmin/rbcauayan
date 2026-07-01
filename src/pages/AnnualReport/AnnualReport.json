@@ -1,5 +1,11 @@
 {
     "reports": [
+         {
+            "id": 5,
+            "year": 2025,
+            "title": "Annual Report as of 2025",
+            "pdfUrl": "/pdfs/annualrepor2025.pdf"
+        },
         {
             "id": 4,
             "year": 2024,
