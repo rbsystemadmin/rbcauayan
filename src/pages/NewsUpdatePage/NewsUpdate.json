@@ -141,6 +141,14 @@
             "category": "News",
             "image": "/src/Assets/savingsjune2026.jpg",
             "date": "July 01, 2026"
+        },
+        {
+            "id": 17,
+            "title": "RURAL BANKING CONSCIOUSNESS WEEK 2026",
+            "description": "STRENGTHENING FINANCIAL RESILIENCE THROUGH RURAL BANKS",
+            "category": "News",
+            "image": "/src/Assets/August24,2026.jpg",
+            "date": "August 24, 2026"
         }
         
     ]
