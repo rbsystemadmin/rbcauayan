@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import PdicLogo from '../../Assets/pdic.png';
+import PdicLogo from '../../Assets/pdic.jpg';
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
