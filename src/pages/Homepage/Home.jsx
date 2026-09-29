@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import PdicLogo from '../../Assets/pdic.png';
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
@@ -200,7 +201,11 @@ function Home() {
 
             {/* Features Section */}
             <section className="features-section" >
+                {/* add here the logo and center and the image name is pdic.png */}
                 <div className='feature-header'>
+                    <div className="pdic-logo-wrapper">
+                        <img src={PdicLogo} alt="PDIC - Philippine Deposit Insurance Corporation" className="pdic-logo" />
+                    </div>
                     <h1>&quot;Deposits are insured by PDIC up to P1,000,000 per depositor!&quot;</h1>
                     <h2>Products and Services</h2>
                     <p>Explore our range of products and services tailored to meet your banking needs.</p>

@@ -842,3 +842,15 @@
         margin-bottom: 0.5rem;
     }
 }
+.pdic-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pdic-logo {
+    width: 120px;          /* adjust to taste */
+    height: auto;
+    object-fit: contain;
+}
