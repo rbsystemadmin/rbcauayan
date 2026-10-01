@@ -22,10 +22,12 @@ function DepositProductsPage() {
             <Navbar />
             <div className="deposit-header">
                 <h1>Deposit Products</h1>
-                <p>Secure your future with our comprehensive range of deposit solutions</p>
                 <p>
                     <em>{"\"Deposits are insured by PDIC up to P1,000,000 per depositor!\""}</em>
                 </p>
+                
+                <p>Secure your future with our comprehensive range of deposit solutions</p>
+                
             </div>
 
             <div className="deposit-grid">
